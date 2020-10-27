@@ -6,6 +6,11 @@ public class FizzBuzz {
         
         int num = in.nextInt();
 
-        System.out.println("Testing");
+        for(int i=1; i<=num; i++)
+            System.out.println(generateFizzBuzz(i));
+    }
+
+    public static String generateFizzBuzz(int num) {
+        return "Testing...";
     }
 }
