@@ -1,4 +1,8 @@
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import java.util.Scanner;
+
+import org.junit.Test;
 
 public class FizzBuzz {
     public static void main(String[] args) {
@@ -12,5 +16,10 @@ public class FizzBuzz {
 
     public static String generateFizzBuzz(int num) {
         return "Testing...";
+    }
+
+    @Test
+    public void testFizzBuzz() {
+        assertEquals("1",generateFizzBuzz(1));
     }
 }
