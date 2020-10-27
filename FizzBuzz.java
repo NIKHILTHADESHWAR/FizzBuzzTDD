@@ -25,6 +25,6 @@ public class FizzBuzz {
 
     @Test
     public void testFizzBuzz() {
-        assertEquals("7",generateFizzBuzz(7));
+        assertEquals("8",generateFizzBuzz(8));
     }
 }
