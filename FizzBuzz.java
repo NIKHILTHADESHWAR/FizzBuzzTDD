@@ -16,11 +16,11 @@ public class FizzBuzz {
 
     public static String generateFizzBuzz(int num) {
         String result;
-        if(num%3 == 0 && num%5 == 0)
+        if(multipleOf3(num) && multipleOf5(num))
             result = "FizzBuzz";
-        else if(num%3 == 0)
+        else if(multipleOf3(num))
             result = "Fizz";
-        else if(num%5 == 0)
+        else if(multipleOf5(num))
             result = "Buzz";
         else
             result = Integer.toString(num);
@@ -30,5 +30,17 @@ public class FizzBuzz {
     @Test
     public void testFizzBuzz() {
         assertEquals("FizzBuzz",generateFizzBuzz(15));
+    }
+
+    private static boolean multipleOf3(int n) {
+        if(n%3 == 0)
+            return true;
+        return false;
+    }
+
+    private static boolean multipleOf5(int n) {
+        if(n%5 == 0)
+            return true;
+        return false;
     }
 }
