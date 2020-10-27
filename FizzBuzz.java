@@ -15,7 +15,7 @@ public class FizzBuzz {
     }
 
     public static String generateFizzBuzz(int num) {
-        return "1";
+        return Integer.toString(num);
     }
 
     @Test
