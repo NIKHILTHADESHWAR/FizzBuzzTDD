@@ -15,14 +15,16 @@ public class FizzBuzz {
     }
 
     public static String generateFizzBuzz(int num) {
+        String result;
         if(num%3 == 0 && num%5 == 0)
-            return "FizzBuzz";
+            result = "FizzBuzz";
         else if(num%3 == 0)
-            return "Fizz";
+            result = "Fizz";
         else if(num%5 == 0)
-            return "Buzz";
+            result = "Buzz";
         else
-            return Integer.toString(num);
+            result = Integer.toString(num);
+        return result;
     }
 
     @Test
