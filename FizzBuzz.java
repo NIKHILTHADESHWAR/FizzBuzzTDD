@@ -15,7 +15,10 @@ public class FizzBuzz {
     }
 
     public static String generateFizzBuzz(int num) {
-        return Integer.toString(num);
+        if(num==3)
+            return "Fizz";
+        else
+            return Integer.toString(num);
     }
 
     @Test
